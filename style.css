@@ -24,9 +24,12 @@ html{
 a{
     text-decoration: none;
 }
+main{
+    padding-top: 5rem;
+}
 .card{
-    border-radius: 10em;
-    padding: 1rem;
+    border-radius: 1.5em;
+    padding: 1.5rem;
     margin: 1rem;
 }
 /* navbar */
@@ -60,14 +63,28 @@ a{
 /* main */
 main section .container{
     display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-
+    flex-direction: column;
 }
 main .card{
     background-color: #B5DDFF;
+    padding-bottom: 0;
 }
-
+main .card h2{
+    color: #0084FD;
+    margin-bottom: 1rem;
+}
+main .card a{
+    background-color: #0084FD;
+    color: white;
+    text-align: center;
+    margin: 1rem;
+    width: 80%;
+}
+main .card img{
+    max-width: 80%;
+    margin:1rem 10% 0 10%;
+    margin-bottom: -5px;
+}
 /* media e animazioni */
 @media screen and (min-width: 811px) {
     .nav-top ul{
