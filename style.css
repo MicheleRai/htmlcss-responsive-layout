@@ -24,6 +24,11 @@ html{
 a{
     text-decoration: none;
 }
+.card{
+    border-radius: 10em;
+    padding: 1rem;
+    margin: 1rem;
+}
 /* navbar */
 .nav-top{
     background-color: #0084FD;
@@ -52,6 +57,18 @@ a{
     padding: 1rem;
 } 
 
+/* main */
+main section .container{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+
+}
+main .card{
+    background-color: #B5DDFF;
+}
+
+/* media e animazioni */
 @media screen and (min-width: 811px) {
     .nav-top ul{
         display: flex;
