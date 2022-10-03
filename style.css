@@ -6,3 +6,71 @@
 html{
     font-family: 'Roboto', sans-serif;
 }
+/* general */
+.container{
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+.btn{
+    all: unset;
+    display: inline-block;
+    white-space: nowrap;
+    border-radius: 10em;
+    padding: 0.3rem 0.5rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+/* navbar */
+.nav-top{
+    background-color: #0084FD;
+    height: 4.7rem;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    width: 100vw;
+}
+.nav-top .container{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+    height: 100%;
+}
+.nav-top ul{
+    display: none;
+}
+.hamburgher{
+    font-size: 2rem;
+    padding: 1rem;
+    color: white;
+}
+.nav-top img{
+    padding: 1rem;
+} 
+
+@media screen and (min-width: 811px) {
+    .nav-top ul{
+        display: flex;
+        align-items: center;
+        height: 100%;
+        list-style: none;
+    }
+    .nav-top li{
+        display: flex;
+        align-items: center;
+        height: 100%;
+        padding: 0 1rem;
+        text-decoration: none;
+    }
+    .nav-top li a{
+        color: white;
+    }
+    .nav-top li .btn{
+        background-color: white;
+        color: black;
+    }
+}
