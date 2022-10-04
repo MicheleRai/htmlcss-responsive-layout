@@ -65,16 +65,19 @@ p{
 
 /* main */
 main section .container{
-    display: flex;
-    flex-direction: column;
+    display: flex;;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 main .card{
     background-color: #B5DDFF;
     padding-bottom: 0;
     text-align: center;
+    flex-basis: 100%;
 }
 #big{
     text-align: left;
+    flex: 2 1 auto;
 }
 main .card h2{
     color: #0084FD;
@@ -126,3 +129,13 @@ main .card .text p{
         color: black;
     }
 }
+@media screen and (min-width:376px) {
+    .card{
+        flex-basis: calc((100% - 2rem) / 3);
+    }
+    #big{
+        flex-basis: calc(100% - calc((100% - 2rem) / 3) - 1rem);
+    }
+
+}   
+   
