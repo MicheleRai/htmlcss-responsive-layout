@@ -261,11 +261,34 @@ main .fifth .about a{
     background-color: #9792E4;
     margin: 1rem 0 3rem 0;
 }
-
-
-
-
-
+main .sixth{
+    background-color: #9792E4;
+    color: white;
+    padding: 3rem 0;
+    text-align: center;
+}
+main .sixth a.btn{
+    background-color:white;
+    color: #9792E4;
+    padding: 1rem 2rem;
+    margin: 1rem 0;
+}
+main .sixth .motto{
+    font-size: 35px;
+}
+.free{
+    color: #FDC15F;
+    font-size: 70px;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 3rem 0;
+    text-align: center;
+}
+footer a{
+    color: #9792E4;
+}
 /* media e animazioni */
 @media screen and (min-width: 811px) {
     .nav-top ul{
