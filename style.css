@@ -185,15 +185,47 @@ main .third .card{
     align-items: center;
     color: white;
     text-align: center;
+    gap: 1.5rem;
 }
 .third .testimonial .quote{
     font-weight: 300;
 }
+main .fourth{
+    background-color: #9792E4;
+    padding: 3rem 0;
+}
+main .fourth .container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+main .fourth h1{
+    color: white;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+main .fourth .card{
+    background-color: white;
+    color: #9792E4;
+    flex-basis: 100%;
+}
+main .fourth .card p{
+    color: black;
+    margin: 1rem 0;
+}
+main .fourth .card h1.number{
+    font-size: 70px;
+    color: #9792E4;
+    text-align: left;
+}
+main .fourth .card .btn{
+    background-color: #9792E4;
+    color: white;
+    padding: 0.7rem 2rem;
+}
 
 
-/* apertura: <i class="fa-solid fa-quote-left"></i>
-    chiusura: <i class="fa-solid fa-quote-right"></i>
-*/
+/* apertura: <i class="fa-solid fa-quote-left"></i>*/
 
 
 
@@ -220,9 +252,6 @@ main .third .card{
         background-color: white;
         color: black;
     }
-    .third .testimonial{
-        flex-wrap: nowrap;
-    }
 }
 @media screen and (min-width:376px) {
     main .first .card {
@@ -233,6 +262,7 @@ main .third .card{
     }
     .third .testimonial{
         text-align: left;
+        flex-wrap: nowrap
     }
 }   
    
