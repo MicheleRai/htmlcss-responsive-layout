@@ -64,8 +64,8 @@ p{
 } 
 
 /* main */
-main section .first .container{
-    display: flex;;
+main .first .container{
+    display: flex;
     flex-wrap: wrap;
     gap: 1rem;
 }
@@ -141,14 +141,6 @@ main .third h1{
 }
 main .third .card{
     background-color: #9792E4;
-}
-main .third .card .img-container{
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-}
-main .third .card .img-container .a{
-    background-image: url(img/testimonial1.jpg);
 }
 
 
