@@ -77,7 +77,6 @@ main .first .card{
 }
 #big{
     text-align: left;
-    flex: 2 1 auto;
 }
 main .first .card h2{
     color: #0084FD;
@@ -88,7 +87,7 @@ main .first .card>h1{
     margin-bottom: 1rem;
     font-size: 100px;
 }
-main .first .card .small{
+main .first .card {
     text-align: center;
 }
 main .first .card a{
@@ -129,6 +128,16 @@ main .second .card a{
     border-radius: 100%;
     padding: 0.7rem 1rem;
 }
+main .third{
+    margin: 2rem 0;
+}
+main .third .testimonial{
+    text-align: center;
+}
+main .third h1{
+    color: #9792E4;
+    margin: 1rem;
+}
 
 /* media e animazioni */
 @media screen and (min-width: 811px) {
@@ -154,7 +163,7 @@ main .second .card a{
     }
 }
 @media screen and (min-width:376px) {
-    .card{
+    main .firs .card .text{
         flex-basis: calc((100% - 2rem) / 3);
     }
     #big{
