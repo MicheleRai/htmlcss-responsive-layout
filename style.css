@@ -107,6 +107,7 @@ main .card .text p{
 main .second{
     background-color: #9792E4;
     padding-bottom: 2rem;
+    margin-top: 2rem;
 }
 main .second img{
     margin:2rem ;
@@ -223,9 +224,44 @@ main .fourth .card .btn{
     color: white;
     padding: 0.7rem 2rem;
 }
+main .fifth {
+    display: flex;
+    justify-content: center;
+}
+main .fifth .text h1{
+    margin: 2rem 0;
+    font-size: 50px;
+    color: #9792E4;
+}
+main .fifth .about{
+    color: #9792E4;
+    position: relative;
+}
+.about-img-container{
+    width: 50%;
+    background-image: url(img/about.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+.about-img-container:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+    margin-bottom: 1rem;
+}
+.quote-big{
+    font-size: 60px;
+    position: absolute;
+    top: 15%;
+    left: 40%;
+}
+main .fifth .about a{
+    color: white;
+    background-color: #9792E4;
+    margin: 1rem 0 3rem 0;
+}
 
-
-/* apertura: <i class="fa-solid fa-quote-left"></i>*/
 
 
 
