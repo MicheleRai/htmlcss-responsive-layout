@@ -131,7 +131,7 @@ main .second .card a{
 main .third{
     margin: 2rem 0;
 }
-main .third .testimonial{
+.testimonial-text{
     text-align: center;
 }
 main .third h1{
@@ -140,7 +140,60 @@ main .third h1{
 }
 main .third .card{
     background-color: #9792E4;
+    margin: 1rem 0;
 }
+.img-container-a{
+    width: 50%;
+    background-image: url(img/testimonial1.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+.img-container-a:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+  .img-container-b{
+    width: 50%;
+    background-image: url(img/testimonial2.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+.img-container-b:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+  .img-container-c{
+    width: 50%;
+    background-image: url(img/testimonial3.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+.img-container-c:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+.third .testimonial{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+.third .testimonial .quote{
+    font-weight: 300;
+}
+
+
+/* apertura: <i class="fa-solid fa-quote-left"></i>
+    chiusura: <i class="fa-solid fa-quote-right"></i>
+*/
 
 
 
@@ -167,6 +220,9 @@ main .third .card{
         background-color: white;
         color: black;
     }
+    .third .testimonial{
+        flex-wrap: nowrap;
+    }
 }
 @media screen and (min-width:376px) {
     main .first .card {
@@ -175,6 +231,8 @@ main .third .card{
     #big{
         flex-basis: calc(100% - calc((100% - 2rem) / 3) - 1rem);
     }
-
+    .third .testimonial{
+        text-align: left;
+    }
 }   
    
