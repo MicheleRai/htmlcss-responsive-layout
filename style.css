@@ -69,7 +69,7 @@ main section .container{
     flex-wrap: wrap;
     gap: 1rem;
 }
-main .card{
+main .first .card{
     background-color: #B5DDFF;
     padding-bottom: 0;
     text-align: center;
@@ -79,11 +79,11 @@ main .card{
     text-align: left;
     flex: 2 1 auto;
 }
-main .card h2{
+main .first .card h2{
     color: #0084FD;
     margin-bottom: 1rem;
 }
-main .card>h1{
+main .first .card>h1{
     color: #0084FD;
     margin-bottom: 1rem;
     font-size: 100px;
@@ -91,7 +91,7 @@ main .card>h1{
 main .first .card .small{
     text-align: center;
 }
-main .card a{
+main .first .card a{
     background-color: #0084FD;
     color: white;
     text-align: center;
@@ -106,6 +106,30 @@ main .card img{
 main .card .text p{
     margin-bottom: 1rem;
 }
+main .second{
+    background-color: #9792E4;
+}
+main .second img{
+    margin:2rem ;
+    width: 90%;
+    
+}
+main .big-planning{
+    color: white;
+}
+main .big-planning h1{
+    font-size: 150%;
+}
+main .second .card{
+    background-color: white;
+    text-align: center;
+}
+main .second .card a{
+    background-color: #9792E4;
+    border-radius: 100%;
+    padding: 0.7rem 1rem;
+}
+
 /* media e animazioni */
 @media screen and (min-width: 811px) {
     .nav-top ul{
