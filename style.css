@@ -9,7 +9,7 @@ html{
 /* general */
 .container{
     max-width: 1120px;
-    margin: 0 auto;
+    margin: auto;
     padding: 0 1rem;
 }
 .btn{
@@ -108,10 +108,14 @@ main .second{
     background-color: #9792E4;
     padding-bottom: 2rem;
     margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
 }
 main .second img{
     margin:2rem ;
-    width: 90%;
+    max-width: 90%;
     
 }
 main .big-planning{
@@ -198,6 +202,7 @@ main .fourth{
 main .fourth .container{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 1rem;
 }
 main .fourth h1{
@@ -224,9 +229,12 @@ main .fourth .card .btn{
     color: white;
     padding: 0.7rem 2rem;
 }
-main .fifth {
+main .fifth .container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    padding-top: 2rem;
+    gap: 2rem;
 }
 main .fifth .text h1{
     margin: 2rem 0;
@@ -289,7 +297,27 @@ footer{
 footer a{
     color: #9792E4;
 }
+
 /* media e animazioni */
+
+@media screen and (min-width:376px) {
+    main .first .container .card {
+        flex-basis: calc((100% - 2rem) / 3);
+    }
+    .first .container .big-container.card{
+        flex-basis: calc(100% - calc((100% - 2rem) / 3) - 1rem);
+    }
+    .third .testimonial{
+        text-align: left;
+        flex-wrap: nowrap
+    }
+    main .fourth .card{
+        flex-basis: 40%;
+    }
+    main .fifth .container{
+        flex-direction: row;
+    }
+}   
 @media screen and (min-width: 811px) {
     .nav-top ul{
         display: flex;
@@ -311,17 +339,34 @@ footer a{
         background-color: white;
         color: black;
     }
-}
-@media screen and (min-width:376px) {
-    main .first .card {
-        flex-basis: calc((100% - 2rem) / 3);
+    main .big-planning{
+        flex-basis: 40%;
+    }
+    main .second .card{
+        flex-basis: 40%;
+    }  
+    .big-container.card{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
     }
     #big{
-        flex-basis: calc(100% - calc((100% - 2rem) / 3) - 1rem);
+        flex-basis: 40%;
     }
-    .third .testimonial{
-        text-align: left;
-        flex-wrap: nowrap
+    main .card img{
+        flex-basis: 40%;
+        margin: 0;
+        max-width: 60%;
     }
-}   
-   
+    main .second .container{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        padding-top: 3rem;
+        gap: 2rem;
+    }
+    main .fourth .card{
+        flex-basis: 30%;
+    }
+}
